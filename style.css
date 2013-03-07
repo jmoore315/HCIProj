@@ -6,12 +6,16 @@ body {
 }
 
 #header {
+	font-family: "Foo Regular", "Bar Sans", sans-serif;
+	font-weight: bold;
 	color: teal;
 	text-align: center;
-	font-size: 2em;
+	font-size: 4em;
 	border-bottom: 2px solid teal;
+	padding: 1em;
 }
 
 #content {
+	font-family: "Foo Regular", "Bar Sans", sans-serif;
 	color: white;
 }
