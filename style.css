@@ -2,10 +2,16 @@ body {
 	background-color: black;
 	height: 100%;
 	width: 100%;
+	margin: 0;
 }
 
+#header {
+	color: teal;
+	text-align: center;
+	font-size: 2em;
+	border-bottom: 2px solid teal;
+}
 
-h1, h2 {
+#content {
 	color: white;
-
 }
