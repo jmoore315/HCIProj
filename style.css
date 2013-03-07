@@ -11,11 +11,34 @@ body {
 	color: teal;
 	text-align: center;
 	font-size: 4em;
-	border-bottom: 2px solid teal;
-	padding: 1em;
+	border-bottom: 7px solid teal;
+	padding: .3em;
 }
 
 #content {
 	font-family: "Foo Regular", "Bar Sans", sans-serif;
 	color: white;
+	text-align: center;
 }
+
+#footer {
+	color: white;
+	background-color: #272722;
+	position: fixed;
+	bottom: 0px;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	clear: both;
+	border-top: 7px solid teal;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.bottom-link {
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+
