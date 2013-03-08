@@ -1,8 +1,13 @@
+html {
+	height:100%;
+}
+
 body {
 	background-color: black;
 	height: 100%;
 	width: 100%;
 	margin: 0;
+	min-height: 100%;
 }
 
 #header {
@@ -27,6 +32,8 @@ body {
 	z-index: 1;
 	padding: 90px 0 180px 0;
 	width: 100%;
+	clear: both;
+	overflow: hidden;
 
 
 }
@@ -42,6 +49,8 @@ body {
     z-index:1;
     padding: 0;
     margin: 0;
+    float: left;
+    clear: both;
 
 
 
@@ -95,6 +104,18 @@ color: teal;
 
 #myMap {
 	height: 100%;
+	width: 100%;
+	overflow: hidden;
 
+	position: absolute;
+	margin: 0;
+}
 
+#content {
+	height: 100%;
+	min-height: 100%;
+	height: auto !important;
+
+	vertical-align:bottom;
+	overflow: auto;
 }
