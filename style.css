@@ -13,10 +13,10 @@ body {
 #header {
 	font-family: "Foo Regular", "Bar Sans", sans-serif;
 	font-weight: bold;
-	color: teal;
+	color: purple;
 	text-align: center;
 	font-size: 4em;
-	border-bottom: 7px solid teal;
+	border-bottom: 7px solid purple;
 	padding: .3em;
 	position: fixed;
 	width: 100%;
@@ -130,7 +130,7 @@ width: 25%;
 }
 
 #selected-icon, #selected-text {
-	color: gray;
+	color: white;
 }
 
 
