@@ -34,11 +34,20 @@ body {
 	text-align: center;
 	padding-top: 1em;
 	padding-bottom: 1em;
+
 }
 
 .bottom-link {
 	width: 25%;
+	height: 100%;
 	float: left;
 	text-align: center;
+	padding: 0;
+	margin: 0;
 }
 
+.icon-8x {
+font-size: 8em;
+color: teal;
+
+}
