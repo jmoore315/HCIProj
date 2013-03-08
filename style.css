@@ -68,8 +68,7 @@ body {
 	clear: both;
 	border-top: 7px solid teal;
 	text-align: center;
-	padding-top: 1em;
-	padding-bottom: 1em;
+
 	height: 180px;
 	z-index: 2;
 	background-color: inherit;
@@ -83,7 +82,8 @@ body {
 	float: left;
 	text-align: center;
 	padding: 0;
-	margin: 0;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 .icon-8x {
@@ -119,3 +119,18 @@ color: teal;
 	vertical-align:bottom;
 	overflow: auto;
 }
+
+.bottom-link-selected {
+	background-color: teal;
+height: 100%;
+width: 25%;
+	float: left;
+	text-align: center;
+	padding: 0;
+}
+
+#selected-icon, #selected-text {
+	color: gray;
+}
+
+
