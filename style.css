@@ -17,16 +17,27 @@ body {
 	color: purple;
 	text-align: center;
 	font-size: 4em;
-	border-bottom: 10px solid purple;
-	padding: .3em;
+	/*border-bottom: 10px solid purple; */
+	/*padding: .3em;*/
+	padding: 0;
 	position: fixed;
 	width: 100%;
-	display: block;
+    display: table-cell;
 	height: 90px ;
-	top 0 !important;
+	top 0;
 	left 0;
 	z-index: 2;
 	background-color: inherit;
+	vertical-align: middle;
+}
+
+#header-text {
+	width: 100%;
+	height: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	vertical-align: middle;
+	display:inline-block;
 }
 
 #wrapper {
@@ -35,6 +46,8 @@ body {
 	width: 100%;
 	clear: both;
 	overflow: hidden;
+	margin: 0;
+	background-color: white;
 
 
 }
