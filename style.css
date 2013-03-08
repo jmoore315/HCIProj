@@ -8,21 +8,22 @@ body {
 	width: 100%;
 	margin: 0;
 	min-height: 100%;
+	padding: 0;
 }
 
 #header {
 	font-family: "Foo Regular", "Bar Sans", sans-serif;
 	font-weight: bold;
-	color: purple;
+	color: #3D003D;
 	text-align: center;
 	font-size: 4em;
-	border-bottom: 7px solid purple;
+	border-bottom: 10px solid #3D003D;
 	padding: .3em;
 	position: fixed;
 	width: 100%;
 	display: block;
-	height: 90px;
-	top 0;
+	height: 90px ;
+	top 0 !important;
 	left 0;
 	z-index: 2;
 	background-color: inherit;
@@ -30,7 +31,7 @@ body {
 
 #wrapper {
 	z-index: 1;
-	padding: 90px 0 180px 0;
+	padding: 100px 0 180px 0;
 	width: 100%;
 	clear: both;
 	overflow: hidden;
@@ -51,6 +52,7 @@ body {
     margin: 0;
     float: left;
     clear: both;
+    padding: 20px;
 
 
 
@@ -66,7 +68,7 @@ body {
 	margin: 0;
 	width: 100%;
 	clear: both;
-	border-top: 7px solid purple;
+	border-top: 10px solid #3D003D;
 	text-align: center;
 
 	height: 180px;
@@ -88,7 +90,7 @@ body {
 
 .icon-8x {
 font-size: 8em;
-color: purple;
+color: #3D003D;
 
 }
 
@@ -111,6 +113,7 @@ color: purple;
 	margin: 0;
 margin-top: 45px;
 margin-bottom: 90px;
+	z-index: 1;
 }
 
 #content {
@@ -135,4 +138,7 @@ width: 25%;
 	color: black;
 }
 
-
+#events {
+	height: 100%;
+	color: white;
+}
