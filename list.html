@@ -4,45 +4,39 @@
 	<meta charset="utf-8">
 	<meta name="description" content="NU Nightlife. Find parties, host events, and invite friends.">
 	<link rel="stylesheet" href="font-awesome.min.css">
+	<link rel="stylesheet" href="font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>NU Nightlife</title>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-
-<script type="text/javascript">
-      function initialize() {
-          var mapOptions = {
-            zoom: 14,
-            center: new google.maps.LatLng(42.06, -87.68), 
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-          };
-          var map = new google.maps.Map(document.getElementById('myMap'),mapOptions);
-      }
-    </script>
 	
 </head>
-<body onload = "initialize()">
+<body>
 	<div id="header">
 		NU Nightlife
 	</div>
 	<div id="wrapper">
-			<div id="myMap">
-			</div>
+		<div id="content">
+			<h1>List of events page. Possibly white bg
 
+
+
+		</div>
 	</div>
 
 	<div id="footer">
 		<a href="map.html">
-			<span class="bottom-link-selected" id="map" >
-					<i class="icon-globe icon-8x" id="selected-icon"></i>
+			<span class="bottom-link" id="map">
+				
+					<i class="icon-globe icon-8x"></i>
 					<br/> 
-					<span class="icon-text" id="selected-text">Map</span>
+					<span class="icon-text">Map</span>
+				
 			</span>
 		</a>
 		<a href="list.html">
-			<span class="bottom-link" id="list">
-				<i class="icon-reorder icon-8x"></i>
+			<span class="bottom-link-selected" id="list">
+				<i class="icon-reorder icon-8x" id="selected-icon"></i>
 				<br/>
-				<span class="icon-text">List</span>
+				<span class="icon-text" id="selected-text">List</span>
 				
 			</span>
 		</a>

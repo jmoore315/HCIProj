@@ -66,7 +66,7 @@ body {
 	margin: 0;
 	width: 100%;
 	clear: both;
-	border-top: 7px solid teal;
+	border-top: 7px solid purple;
 	text-align: center;
 
 	height: 180px;
@@ -88,7 +88,7 @@ body {
 
 .icon-8x {
 font-size: 8em;
-color: teal;
+color: purple;
 
 }
 
@@ -97,7 +97,7 @@ color: teal;
 }
 
 #footer a, a:hover, a:visited{
-	color:white;
+	color:purple;
 }
 
 
@@ -109,6 +109,8 @@ color: teal;
 
 	position: absolute;
 	margin: 0;
+margin-top: 45px;
+margin-bottom: 90px;
 }
 
 #content {
@@ -121,7 +123,7 @@ color: teal;
 }
 
 .bottom-link-selected {
-	background-color: teal;
+	background-color: purple;
 height: 100%;
 width: 25%;
 	float: left;
@@ -130,7 +132,7 @@ width: 25%;
 }
 
 #selected-icon, #selected-text {
-	color: white;
+	color: black;
 }
 
 
