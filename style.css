@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	background-color: black;
+	background-color: #272722;
 	height: 100%;
 	width: 100%;
 	margin: 0;
@@ -14,10 +14,10 @@ body {
 #header {
 	font-family: "Foo Regular", "Bar Sans", sans-serif;
 	font-weight: bold;
-	color: #3D003D;
+	color: purple;
 	text-align: center;
 	font-size: 4em;
-	border-bottom: 10px solid #3D003D;
+	border-bottom: 10px solid purple;
 	padding: .3em;
 	position: fixed;
 	width: 100%;
@@ -52,7 +52,6 @@ body {
     margin: 0;
     float: left;
     clear: both;
-    padding: 20px;
 
 
 
@@ -61,14 +60,14 @@ body {
 
 #footer {
 	color: white;
-	background-color: #272722;
+	background-color: purple;
 	position: fixed;
 	bottom: 0px;
 	padding: 0;
 	margin: 0;
 	width: 100%;
 	clear: both;
-	border-top: 10px solid #3D003D;
+	border-top: 10px solid purple;
 	text-align: center;
 
 	height: 180px;
@@ -90,7 +89,7 @@ body {
 
 .icon-8x {
 font-size: 8em;
-color: #3D003D;
+color: purple;
 
 }
 
@@ -135,7 +134,7 @@ width: 25%;
 }
 
 #selected-icon, #selected-text {
-	color: black;
+	color: #272722;
 }
 
 #events {
