@@ -13,9 +13,13 @@ body {
 	font-size: 4em;
 	border-bottom: 7px solid teal;
 	padding: .3em;
+	/* position: absolute; */
+	top: 0px;
+	width: 100%;
 }
 
 #content {
+
 	font-family: "Foo Regular", "Bar Sans", sans-serif;
 	color: white;
 	text-align: center;
