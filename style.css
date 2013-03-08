@@ -38,8 +38,9 @@ body {
 	display: inline !important;
 }
 
-#header a{
+#header a, a:visited, a:hover{
 	text-decoration: none;
+	color: #272722;
 }
 
 
