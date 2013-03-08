@@ -3,7 +3,8 @@ html {
 }
 
 body {
-	background-color: #272722;
+	/*background-color: #272722; */
+	background-color: white;
 	height: 100%;
 	width: 100%;
 	margin: 0;
@@ -37,6 +38,12 @@ body {
 	font-size: 70px;
 	display: inline !important;
 }
+#wrapper h3{
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
 
 #header a, a:visited, a:hover{
 	text-decoration: none;
@@ -57,7 +64,7 @@ body {
 
 #content {
 	font-family: "Foo Regular", "Bar Sans", sans-serif;
-	color: white;
+	color: #272722;
 	text-align: center;
 	font-size: 3em;
 	width: 100%;
