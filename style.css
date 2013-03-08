@@ -86,3 +86,7 @@ color: teal;
 .icon-text {
 	font-size: 2.5em;
 }
+
+#push {
+	clear: both;
+}
