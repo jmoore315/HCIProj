@@ -171,4 +171,14 @@ width: 25%;
 
 table {
 	border: none;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: .5em;
+
+	border-spacing: 100;
+}
+
+td {
+	text-align: left;
+	vertical-align: top;
 }
