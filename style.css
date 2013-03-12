@@ -159,9 +159,6 @@ width: 25%;
   -webkit-background-clip: text;
      -moz-background-clip: text;
           background-clip: text;
-
-
-
 }
 
 #events {
@@ -181,4 +178,14 @@ table {
 td {
 	text-align: left;
 	vertical-align: top;
+}
+
+#filter-box {
+	padding-left: 50px;
+	padding-right: 50px;
+	display: inline-block;
+}
+
+#filter-box {
+	text-align: left;
 }
