@@ -14,6 +14,8 @@
           var curLong = position.coords.longitude;
           var curPosition = new google.maps.LatLng(curLat, curLong);
 
+          var position1 = new google.maps.LatLng(42.058468,-87.685911);
+
           
           var mapOptions = {
             zoom: 16,
@@ -27,12 +29,32 @@
                            position: curPosition, 
                            map: map, //The same name as defined above
                            icon: image,
-                           draggable:true,
+                           draggable:false,
                            animation: google.maps.Animation.DROP,
                            title: "Here"
                         });   
-          markerClickListener(marker,curPosition,map); //Calling function to add click even listener
-        }
+
+
+          var marker2 = new google.maps.Marker({
+          	position: position1,
+          	map: map,
+          	icon: image,
+          	draggable: false,
+            animation: google.maps.Animation.DROP,
+            title: "Here"
+          })
+          markerClickListener(marker,curPosition,map); //Calling function to add click event listener
+          markerClickListener(marker2,position1,map); 
+      }
+        
+
+
+
+
+
+
+
+
         
         //Function to add a click event listener to a marker
         function markerClickListener (marker, curPosition,map){
