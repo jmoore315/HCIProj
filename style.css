@@ -189,3 +189,9 @@ td {
 #filter-box {
 	text-align: left;
 }
+
+fieldset { 
+	border:5px solid purple;
+}
+
+input[type=checkbox] {width:100px; height:100px;}
