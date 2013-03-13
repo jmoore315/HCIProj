@@ -222,7 +222,10 @@ input[type=checkbox]
 	float: left;
 	margin-left: 70px;
 }
-
+legend{
+	font-size: 2em;
+	color: purple;
+}
 
 #submit-reset {
 	clear: both;
