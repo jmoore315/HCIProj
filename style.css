@@ -174,12 +174,14 @@ table {
 	font-size: .7em;
 	min-width: 100%;
 
-	border-spacing: 100;
+	border-spacing: 0;
 }
 
 td {
 	text-align: left;
 	vertical-align: top;
+	margin-left:0;
+	margin-right:0;
 }
 
 .num-data{
@@ -263,6 +265,7 @@ legend{
 th {
 	border-bottom: 2px solid black;
 	color: purple;
+	text-align: left;
 }
 
 #filter-middle, #filter-right
@@ -274,6 +277,6 @@ th {
 	border-bottom: 0;
 }
 
-.alt-row {
-	background-color: #B585FF;
+table tr.alt-row td {
+	background-color: #D6BAF2;
 }
