@@ -184,6 +184,7 @@ td {
 	padding-left: 50px;
 	padding-right: 50px;
 	display: inline-block;
+	    z-index:1;
 }
 
 #filter-box {
@@ -192,7 +193,8 @@ td {
 
 fieldset { 
 	border:5px solid purple;
-	line-height: 3em;
+	/*line-height: 3em; */
+	    z-index:1;
 }
 
 input[type=checkbox]
@@ -202,5 +204,6 @@ input[type=checkbox]
   -moz-transform: scale(5); /* FF */
   -webkit-transform: scale(5); /* Safari and Chrome */
   -o-transform: scale(5); /* Opera */
-  padding: 10px;
+  padding: 20px;
+      z-index:1;
 }
