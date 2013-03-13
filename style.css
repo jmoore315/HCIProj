@@ -27,6 +27,8 @@ body {
 	background-color: inherit;
     text-align: center;
     vertical-align: middle;
+    float: left;
+
 }
 
 #header h1{
@@ -96,6 +98,7 @@ body {
 	clear: both;
 	border-top: 10px solid purple;
 	text-align: center;
+	float: left;
 
 	height: 200px;
 	z-index: 2;
