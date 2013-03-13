@@ -20,13 +20,32 @@
 					<form>
 						<fieldset>
 							<legend>Filter</legend>
-							Party Type:<br/>
-							<input type="checkbox" name="party-type" value="party">Party<br/>
-							<input type="checkbox" name="party-type" value="bar">Bar<br/>
-							<input type="checkbox" name="party-type" value="pregame">Pregame<br/>
-							<input type="checkbox" name="party-type" value="other">Other</br>
-							<input type="reset" value="Reset Form">
-							<input type="submit" value="Submit">
+							<div id="party-type-filter">
+								<span class="filter-section-title">Party Type:</span><br/>
+								<input type="checkbox" name="party-type" value="party">Party<br/>
+								<input type="checkbox" name="party-type" value="bar">Bar<br/>
+								<input type="checkbox" name="party-type" value="pregame">Pregame<br/>
+								<input type="checkbox" name="party-type" value="other">Other</br>
+							</div>
+							<div id="party-distance-filter">
+								<span class="filter-section-title">Distance:</span><br/>
+								<input type="checkbox" name="party-distance" value="party">0m - 1m<br/>
+								<input type="checkbox" name="party-distance" value="bar">1m - 5m<br/>
+								<input type="checkbox" name="party-distance" value="pregame">5m +<br/>
+							</div>
+							<div id="party-misc-filter">
+								<span class="filter-section-title">Misc:</span><br/>
+								<input type="checkbox" name="party-misc" value="party">Public<br/>
+								<input type="checkbox" name="party-misc" value="bar">Invited<br/>
+								<input type="checkbox" name="party-misc" value="pregame">Frat<br/>
+								<input type="checkbox" name="party-misc" value="other">Only Free</br>
+							</div>
+							<div id="submit-reset">
+								<input type="reset" value="Reset Form">
+								<input type="submit" value="Submit">
+							</div>
+
+
 						</fieldset>
 
 
