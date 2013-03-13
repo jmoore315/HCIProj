@@ -210,7 +210,7 @@ input[type=checkbox]
   -moz-transform: scale(3); /* FF */
   -webkit-transform: scale(3); /* Safari and Chrome */
   -o-transform: scale(3); /* Opera */
-  padding: 25px;
+  padding: 45px;
       z-index:1;
 }
 .filter-section-title {
