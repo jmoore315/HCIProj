@@ -252,3 +252,16 @@ legend{
 	font-size: 1em;
 
 }
+
+th {
+	border-bottom: 2px solid black;
+}
+
+#filter-middle, #filter-right
+{
+	margin-left: 100px;
+}
+
+.empty-th{
+	border-bottom: 0;
+}
