@@ -223,8 +223,6 @@ input[type=checkbox]
 	margin-left: 70px;
 }
 legend{
-	font-size: 2em;
-	color: purple;
 }
 
 #submit-reset {
@@ -233,4 +231,13 @@ legend{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+}
+
+#sort {
+	clear: both;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
 }
