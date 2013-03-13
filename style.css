@@ -195,7 +195,7 @@ fieldset {
 	/*line-height: 3em; */
 	    z-index:1;
 	    height: 100%;
-	    line-height: 1.5em;
+	    line-height: 2em;
 	    padding: 0;
 }
 
@@ -206,7 +206,7 @@ input[type=checkbox]
   -moz-transform: scale(5); /* FF */
   -webkit-transform: scale(5); /* Safari and Chrome */
   -o-transform: scale(5); /* Opera */
-  padding: 55px;
+  padding: 25px;
       z-index:1;
 }
 .filter-section-title {
