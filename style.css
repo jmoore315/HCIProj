@@ -187,6 +187,7 @@ td {
     text-align: left;
     margin-left: 20px;
     margin-right: 20px;
+    font-size: .8em;
 }
 
 fieldset { 
@@ -194,6 +195,7 @@ fieldset {
 	/*line-height: 3em; */
 	    z-index:1;
 	    height: 100%;
+	    line-height: 2em;
 }
 
 input[type=checkbox]
@@ -203,7 +205,7 @@ input[type=checkbox]
   -moz-transform: scale(5); /* FF */
   -webkit-transform: scale(5); /* Safari and Chrome */
   -o-transform: scale(5); /* Opera */
-  padding: 35px;
+  padding: 25px;
       z-index:1;
 }
 .filter-section-title {
