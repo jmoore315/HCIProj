@@ -262,6 +262,7 @@ legend{
 
 th {
 	border-bottom: 2px solid black;
+	color: purple;
 }
 
 #filter-middle, #filter-right
@@ -271,4 +272,8 @@ th {
 
 .empty-th{
 	border-bottom: 0;
+}
+
+.alt-row {
+	background-color: #B585FF;
 }
