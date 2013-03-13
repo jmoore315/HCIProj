@@ -7,20 +7,61 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     </head>
     <style>
+        #submitTemp{
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 5%;
+           
+        }
+
+        #template{
+            margin-top: 2%;
+            width:;
+            max-width:97%;
+            min-width: 80%;
+        }
+
+        #main{
+            /*background-color: #E4E8EB;*/
+        }
+    </style>
     <body id = "main">
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
+
+        <h1><a class="brand" href="#">Cordata</a></h1>
+
+        
         <!--Custom Code -->
-        <div class="navbar">
-            <div class="navbar navbar-fixed-top">
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
                 <ul class="nav">
                     <li class="active"><a href="#">Submit Template</a></li>
-                    <li><a href="#">Send Email</a></li>
+                    <li><a href="email.html">Send Email</a></li>
                 </ul>
             </div>
         </div>
-        <div>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <div class="well" id = "submitTemp" >
+            <h2 class="text-center"> Submit Template </h2>
+            <form class="form-vertical">
+                <div class="control-group">
+                    <div class="text-center">
+                        <input type="text" id="templateName" placeholder="Template Name" style="width:97%;">
+                    </div>
+                    <div class="text-center">
+                         <textarea rows="10"  id="template" placeholder="Email Template" style="width:97%;"></textarea>
+                    </div>
+                    <div class="text-center">
+                         <button rows="10"  id="submitbtn" class="btn" style="width:25%;">Submit</button>
+                    </div>
+                </div>
+            </form>    
         </div>
+
+<h1>Test</h1>
+<h1>Test</h1>
+<h1>Test</h1>
+<h1>Test</h1>
+
     </body>
 </html>
