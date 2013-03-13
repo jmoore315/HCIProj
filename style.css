@@ -132,6 +132,10 @@ color: purple;
 }
 
 
+html,body {
+	height: 100%;
+	width: 100%;
+}
 
 #myMap {
 	height: 100%;
@@ -139,6 +143,7 @@ color: purple;
 	overflow: hidden;
 	position: absolute;
 	z-index: 1;
+	min-height: 200px;
 }
 
 
