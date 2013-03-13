@@ -171,7 +171,7 @@ table {
 	padding-left: 50px;
 	padding-right: 50px;
 	font-size: .7em;
-	min-width: 90;
+	min-width: 100%;
 
 	border-spacing: 100;
 }
@@ -181,6 +181,10 @@ td {
 	vertical-align: top;
 }
 
+.num-data{
+	text-align: right;
+	padding: 0 inherit;
+}
 #filter-box {
 
 
