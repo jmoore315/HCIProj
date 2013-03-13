@@ -13,15 +13,16 @@
           var curLat = position.coords.latitude;
           var curLong = position.coords.longitude;
           var curPosition = new google.maps.LatLng(curLat, curLong);
+
           
           var mapOptions = {
-            zoom: 14,
+            zoom: 16,
             center: curPosition, 
             mapTypeId: google.maps.MapTypeId.ROADMAP
           };
           var map = new google.maps.Map(document.getElementById('myMap'),mapOptions);
 
-          var image = 'map-marker.png';
+          var image = 'big-marker.png';
           var marker = new google.maps.Marker({
                            position: curPosition, 
                            map: map, //The same name as defined above
