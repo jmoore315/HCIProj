@@ -170,7 +170,8 @@ table {
 	border: none;
 	padding-left: 50px;
 	padding-right: 50px;
-	font-size: .5em;
+	font-size: .7em;
+	min-width: 90;
 
 	border-spacing: 100;
 }
@@ -240,11 +241,13 @@ legend{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	margin-top: 10px;
 
 }
 
 #sort-by{
 	font-size: 1em;
+
 }
 #sub, #res{
 
