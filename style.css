@@ -231,6 +231,7 @@ legend{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	margin-top: 10px;
 }
 
 #sort {
@@ -245,6 +246,8 @@ legend{
 #sort-by{
 	font-size: 1em;
 }
-#sub{
-	width: 200px;
+#sub, #res{
+
+	font-size: 1em;
+
 }
