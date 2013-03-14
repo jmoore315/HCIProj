@@ -349,6 +349,7 @@ table tr.alt-row td {
 	font-style: oblique;
 	font-size: .9em;
 	line-height: 1em;
+	vertical-align: middle;
 
 }
 
