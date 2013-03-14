@@ -467,3 +467,8 @@ table tr.alt-row td {
 	width: 70px;
 	float: left;
 }
+
+textarea {
+	font-size: 2em;
+	width: 80%;
+}
