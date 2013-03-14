@@ -230,7 +230,7 @@ input[type=checkbox]
     z-index:1;
     margin: 30px;
     margin-left: 45px;
-    margin-top: 45px;
+    margin-top: 95px;
 }
 .filter-section-title {
 	text-decoration: underline;
@@ -299,5 +299,5 @@ table tr.alt-row td {
 }
 
 #test {
-	margin-right: 40px;
+	margin-right: 60px;
 }
