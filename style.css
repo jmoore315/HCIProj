@@ -385,6 +385,7 @@ table tr.alt-row td {
 	width: 200px;
 	border: 5px solid black;
 	margin-left: 50px;
+	margin-right: 10px;
 }
 
 #profile-info {
@@ -402,5 +403,6 @@ table tr.alt-row td {
 	margin-top: 10px;
 	color: white;
 	background-color: purple;
-	font-size: 3em;
+	font-size: 1.5em;
+	padding-left: 0px;
 }
