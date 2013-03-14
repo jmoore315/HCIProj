@@ -224,10 +224,9 @@ input[type=checkbox]
   /* Double-sized Checkboxes */
   -ms-transform: scale(5); /* IE */
   -moz-transform: scale(5); /* FF */
-  -webkit-transform: scale(5); /* Safari and Chrome */
+  -webkit-transform: scale(7); /* Safari and Chrome */
   -o-transform: scale(5); /* Opera */
-  padding: 150px;
-      z-index:1;
+    z-index:1;
 }
 .filter-section-title {
 	text-decoration: underline;
