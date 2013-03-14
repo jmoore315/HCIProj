@@ -188,11 +188,12 @@ table {
 	border: none;
 	padding-left: 10px;
 	padding-right: 10px;
-	font-size: 1em;
+	font-size: 0.8em;
 	min-width: 100%;
 
 	border-spacing: 0;
 }
+
 
 
 
@@ -299,6 +300,11 @@ th {
 	border-bottom: 2px solid black;
 	color: purple;
 	text-align: left;
+}
+
+#middle-table-header {
+	border-left: 2px solid black;
+	border-right: 2px solid black;
 }
 
 #filter-middle, #filter-right
