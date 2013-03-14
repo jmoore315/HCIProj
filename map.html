@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>NU Nightlife</title>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
 
 <script type="text/javascript">
       function initialize() {
@@ -17,6 +17,25 @@
           };
           var map = new google.maps.Map(document.getElementById('myMap'),mapOptions);
       }
+      var position1 = new google.maps.LatLng(42.055969,-87.68093);
+          var position2 = new google.maps.LatLng(42.049372,-87.678323);
+          var position3 = new google.maps.LatLng(42.049293,-87.684116);
+          var position4 = new google.maps.LatLng(42.05377,-87.686992);
+          var position5 = new google.maps.LatLng(42.046711,-87.681423);
+
+                    var image = 'big-marker.png';
+
+          var marker1 = new google.maps.Marker({
+            position: position1,
+            map: map,
+            icon: image,
+            draggable: false,
+            animation: google.maps.Animation.DROP,
+            title: "Here"
+          })
+
+
+
     </script>
 
 </head>
