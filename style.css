@@ -222,10 +222,10 @@ fieldset {
 input[type=checkbox]
 {
   /* Double-sized Checkboxes */
-  -ms-transform: scale(3); /* IE */
-  -moz-transform: scale(3); /* FF */
-  -webkit-transform: scale(3); /* Safari and Chrome */
-  -o-transform: scale(3); /* Opera */
+  -ms-transform: scale(4); /* IE */
+  -moz-transform: scale(4); /* FF */
+  -webkit-transform: scale(4); /* Safari and Chrome */
+  -o-transform: scale(4); /* Opera */
   padding: 45px;
       z-index:1;
 }
@@ -235,8 +235,8 @@ input[type=checkbox]
 
 
 .party-filter {
-	float: left;
-	margin-left: 70px;
+	text-align: center;
+	clear: both;
 }
 legend{
 }
@@ -246,7 +246,7 @@ legend{
 	float: none;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
+	text-align: left;
 	margin-top: 10px;
 }
 
@@ -278,7 +278,6 @@ th {
 
 #filter-middle, #filter-right
 {
-	margin-left: 100px;
 }
 
 .empty-th{
