@@ -485,3 +485,9 @@ textarea {
 	padding: 10px;
 
 }
+
+#time {
+	font-size: 1em;
+	border-radius: 20px;
+	padding: 10px;
+}
