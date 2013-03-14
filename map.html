@@ -78,15 +78,6 @@
           })
 
 
-          var LatLngList = [position1, position2, position3, position4, position5];
-          var bounds = new google.maps.LatLngBounds();
-
-        for (var i = 0, LtLgLen = LatLngList.length; i < LtLgLen; i++) {
-            bounds.extend(LatLngList[i]);
-        }
-
-        map.fitBounds(bounds);
-
 
 
           markerClickListener(marker,curPosition,map); //Calling function to add click event listener
