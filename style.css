@@ -226,6 +226,7 @@ input[type=checkbox]
   -moz-transform: scale(5); /* FF */
   -webkit-transform: scale(7); /* Safari and Chrome */
   -o-transform: scale(5); /* Opera */
+  padding: 30px;
     z-index:1;
 }
 .filter-section-title {
