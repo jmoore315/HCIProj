@@ -30,7 +30,8 @@ alert("Value: " + stepVal); // alert() for testing purposes only
 
 
 <div id="creation">
-<h5>
+<hr />
+<h5>	
 What kind of event is this?
 </h5>
 <select id="selector">
@@ -55,28 +56,26 @@ Pregame or main event?
   <option value="Pregame">Pregame</option>
   <option value="Main event">Main event</option>
 </select>
+<hr />
 
 
 <h5>
 Cover charge?
 </h5>
-
 <input id="selector" type="number" name="stepper1" min="0" max="10" value="0" />
-<br /><br />
-<br />
-<textarea name="charge" >
+<hr />
 
-</textarea>
-
+<h5>What day is the event?</h5>
 <form action="demo_form.asp">
-  Birthday: <input type="date" name="bday">
+  <input type="date" name="bday">
   <input type="submit">
 </form>
 
-<form action="demo_form.asp">
-  Quantity (between 1 and 5): <input type="number" name="quantity" min="1" max="5">
-  <input type="submit">
-</form>
+<hr />
+
+<h5>What time is the event?</h5>
+Start: <input type="time" name="usr_time_start" id="time">
+End: <input type="time" name="usr_time_end" id="time">
 
 
 
@@ -121,8 +120,6 @@ Date
 Time
 </h5>
 
-Start: <input type="time" name="usr_time_start" id="time">
-End: <input type="time" name="usr_time_end" id="time">
 
 <br />
 <select>
