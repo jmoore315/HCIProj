@@ -161,12 +161,12 @@ width: 25%;
 }
 
 #selected-icon, #selected-text {
-	color: #272722;
-	  /*color: transparent;*/
+	color: white;
+	  /*color: transparent;
   text-shadow: 1px 1px black, -1px -1px black;
   -webkit-background-clip: text;
      -moz-background-clip: text;
-          background-clip: text;
+          background-clip: text; */
 }
 
 #events {
@@ -183,6 +183,18 @@ table {
 
 	border-spacing: 0;
 }
+
+#test-table {
+	border: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 1em;
+	min-width: 100%;
+
+	border-spacing: 0;
+}
+
+
 
 td {
 	text-align: left;
@@ -246,8 +258,9 @@ input[type=checkbox]
 	font-size: 1.5em;
 }
 legend{
-	margin-left: 30%;
+	margin-left: 35%;
 	font-size: 1.5em;
+	font-weight: bold;
 }
 
 #submit-reset {
@@ -303,3 +316,16 @@ table tr.alt-row td {
 #test {
 	margin-right: 75px;
 }
+
+.party-address {
+	font-weight: bold;
+
+}
+
+.party-description {
+	font-style: italic;
+	font-size: .7em;
+	line-height: 1em;
+
+}
+
