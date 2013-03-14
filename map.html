@@ -66,7 +66,7 @@ var image = 'big-marker.png';
         function markerClickListenerTwo (marker, curPosition,map){
             google.maps.event.addListener(marker, 'click', function() {
                 var myInfoWindow = new google.maps.InfoWindow();
-                myInfoWindow.setContent("Bar: The Keg");
+                myInfoWindow.setContent("Bar: The Keg \n $15 open bar");
                 myInfoWindow.open(map, marker);
             });
         }
