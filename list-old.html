@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="NU Nightlife. Find parties, host events, and invite friends.">
+	<link rel="stylesheet" href="font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>NU Nightlife</title>
+	
+</head>
+<body>
+	<div id="header">
+			<h1><a href="index.html">NU Nightlife</a><h1>
+	</div>
+	<div id="wrapper">
+
+			<div id="content">
+				<h2>Find Nightlife Near NU</h2>
+
+				<div id="filter-box">
+					<form>
+						<fieldset>
+							<legend>Filter and Sort</legend>
+							<div class="party-filter">
+								<span class="filter-section-title">Event Type:</span><br/>
+								<input type="checkbox" name="party-type" value="party" checked> Party
+								<input type="checkbox" name="party-type" value="bar" checked> Bar
+								<input type="checkbox" name="party-type" value="pregame" checked> Pregame
+								<input type="checkbox" name="party-type" value="other" checked> Other
+							</div>
+							<div class="party-filter" id="filter-middle">
+								<span class="filter-section-title">Distance:</span><br/>
+								<input type="checkbox" name="party-distance" value="party" checked> 0m - 1m
+								<input type="checkbox" name="party-distance" value="bar" checked> 1m - 5m
+								<input type="checkbox" name="party-distance" value="pregame" checked> 5m +
+							</div>
+							<div class="party-filter" id="filter-right">
+								<span class="filter-section-title">Miscellaneous:</span><br/>
+								<input type="checkbox" name="party-misc" value="party" checked> <span id="test">Public</span>
+								<input type="checkbox" name="party-misc" value="bar" checked> Private (Invited)
+								<br/>
+								<input type="checkbox" name="party-misc" value="pregame" checked> Frat Party
+								<input type="checkbox" name="party-misc" value="other"> Only Free
+							</div>
+							<div id="sort">
+								<span class="filter-section-title">Sort by:</span>
+								 <select name="sort-by" id="sort-by">
+							        <option value="Closest-first">Distance (closest first)</option>
+							        <option value="2">Date & Time (soonest first)</option>
+							        <option value="3">Confirmed Guests</option>
+							        <option value="4">Cover Charge (lowest first)</option>
+							    </select>
+							</div>
+
+
+							<div id="submit-reset">
+								<input type="reset" value="Reset Form" id="res">
+								<input type="submit" value="Submit" id="sub">
+							</div>
+
+
+						</fieldset>
+
+
+					</form>
+
+
+				</div>
+			
+
+
+
+
+						<h2>Current Nightlife</h2>
+						<table 	cellspacing="20">
+							<th class="empty-th"></th>
+							<th>Type</th>
+							<th>Address</th>
+							<th>Date</th>
+							<th>Time</th>
+							<th>Cost</th>
+							<tr>
+								<td>1.</td>
+								<td>Party</td>
+								<td id="event-title">2000 Ridge Avenue</td>
+								<td>March 14</td>
+								<td>11pm - 2am</td>
+								<td>Free</td>
+								<td>
+							</tr>
+							<tr class="alt-row">
+								<td >2.</td>
+								<td>Pregame</td>
+								<td id="event-title">2000 Ridge Avenue</td>
+								<td>March 14</td>
+								<td>11pm - 2am</td>
+								<td>Free</td>
+							</tr>
+							<tr>
+								<td>3.</td>
+								<td>Party</td>
+								<td id="event-title">2000 Ridge Avenue</td>
+								<td>March 14</td>
+								<td>11pm - 2am</td>
+								<td>Free</td>
+							</tr>
+							<tr class="alt-row">
+								<td>4.</td>
+								<td>Bar</td>
+								<td id="event-title">2000 Ridge Avenue</td>
+								<td>March 14</td>
+								<td>11pm - 2am</td>
+								<td>Free</td>
+							</tr>
+							<tr>
+								<td>5.</td>
+								<td>Bar</td>
+								<td id="event-title">2000 Ridge Avenue</td>
+								<td>March 14</td>
+								<td>11pm - 2am</td>
+								<td>Free</td>
+							</tr>
+
+
+
+						</table>
+
+
+
+
+
+
+
+
+						<h2>Upcoming Nightlife</h2>
+												<table 	cellspacing="20">
+							<th class="empty-th"></th>
+							<th>Type</th>
+							<th>Address</th>
+							<th>Date</th>
+							<th>Time</th>
+							<th>Cost</th>
+							<tr>
+								<td>1.</td>
+								<td>Party</td>
+								<td id="event-title">2000 Ridge Avenue</td>
+								<td>March 14</td>
+								<td>11pm - 2am</td>
+								<td>Free</td>
+							</tr>
+							<tr class="alt-row">
+								<td>2.</td>
+								<td>Pregame</td>
+								<td id="event-title">2000 Ridge Avenue</td>
+								<td>March 14</td>
+								<td>11pm - 2am</td>
+								<td>Free</td>
+							</tr>
+							<tr>
+								<td>3.</td>
+								<td>Party</td>
+								<td id="event-title">2000 Ridge Avenue</td>
+								<td>March 14</td>
+								<td>11pm - 2am</td>
+								<td>Free</td>
+							</tr>
+							<tr class="alt-row">
+								<td>4.</td>
+								<td>Bar</td>
+								<td id="event-title">2000 Ridge Avenue</td>
+								<td>March 14</td>
+								<td>11pm - 2am</td>
+								<td>Free</td>
+							</tr>
+							<tr>
+								<td>5.</td>
+								<td>Bar</td>
+								<td id="event-title">2000 Ridge Avenue</td>
+								<td>March 14</td>
+								<td>11pm - 2am</td>
+								<td>Free</td>
+							</tr>
+
+						<br />
+						<br />
+
+
+						</table>
+
+						<h2>Test table</h2>
+							<table id="test-table">
+								<th class="left-table-column">Type</th>
+								<th class="middle-table-column">Details</th>
+								<th class="right-table-column">Distance</th>
+								<tr>
+									<td class="left-table-column">Party</td>
+									<td class="middle-table-column">
+										<div class="party-address">2000 Ridge Avenue</div>
+										<div class="party-description">
+											<table>
+												<tr>
+													<td class="description-category">Description:</td>
+													<td>Chill apartment party. Come by when you want
+												</tr>
+												<tr>
+													<td class="description-category">Time:</td>
+													<td>11pm - 2am
+												</tr>
+												<tr>
+													<td class="description-category">Number Attending:</td>
+													<td>25</td>
+												</tr>
+												<tr>
+													<td class="description-category">Cost:</td>
+													<td>Free</td>
+												</tr>
+												<tr>
+													<td class="description-category">Host:</td>
+													<td>Justin Moore</td>
+												</tr>
+											</table>
+										</div>
+									</td>
+									<td class="right-table-column">0.25 miles</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="left-table-column">Party</td>
+									<td class="middle-table-column">
+										<div class="party-address">2000 Ridge Avenue</div>
+										<div class="party-description">Chill apartment party. Come by when you want. <br /> Time: 11pm - 2am.<br /> 25 attending<br />Hosted by: Justin</div>
+									</td>
+									<td class="right-table-column">0.25 miles</td>
+								</tr>
+							<tr>
+									<td class="left-table-column">Party</td>
+									<td class="middle-table-column">
+										<div class="party-address">2000 Ridge Avenue</div>
+										<div class="party-description"><span class="category">Description:</span> Chill apartment party. Come by when you want. 
+											<br /><span class="category">Time:</span> 11pm - 2am.
+											<br /><span class="category"># attending:</span> 25 attending
+											<br /><span class="category">Hosted by:</span> Justin
+										</div>
+									</td>
+									<td class="right-table-column">0.25 miles</td>
+								</tr>
+								<tr class="alt-row">
+									<td class="left-table-column">Party</td>
+									<td class="middle-table-column">
+										<div class="party-address">2000 Ridge Avenue</div>
+										<div class="party-description">Chill apartment party. Come by when you want. <br /> Time: 11pm - 2am.<br /> 25 attending<br />Hosted by: Justin</div>
+									</td>
+									<td class="right-table-column">0.25 miles</td>
+								</tr>
+
+
+						</table>
+
+			</div>
+
+	</div>
+
+	<div id="footer">
+		<a href="map.html">
+			<span class="bottom-link" id="map" >
+					<i class="icon-globe icon-8x"></i>
+					<br/> 
+					<span class="icon-text">Map</span>
+			</span>
+		</a>
+		<a href="list.html">
+			<span class="bottom-link-selected" id="list">
+				<i class="icon-reorder icon-8x" id="selected-icon"></i>
+				<br/>
+				<span class="icon-text" id="selected-text">List</span>
+				
+			</span>
+		</a>
+
+		<a href="create.html">
+			<span class="bottom-link" id="create">
+				<i class="icon-pencil icon-8x"></i>
+				<br/>
+				<span class="icon-text">Create</span>
+			</span>
+		</a>
+		<a href="profile.html">
+			<span class="bottom-link" id="profile">
+				<i class="icon-user icon-8x"></i>
+				<br/>
+				<span class="icon-text">Profile</span>
+			</span>
+		</a>
+		
+	</div>
+
+</body>
+
+</html>
