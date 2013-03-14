@@ -45,6 +45,19 @@ body {
 	clear: both;
 }
 
+#login {
+
+	background-color: rgb(59, 89, 152);
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+	font-size: 2em;
+	width: 90%;
+	height: 180px;
+	border-radius: 8px;
+}
+#white-text{
+	color: white;
+}
 
 #header a, a:visited, a:hover{
 	text-decoration: none;
