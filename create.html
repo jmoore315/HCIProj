@@ -67,16 +67,25 @@ Cover charge?
 
 <h5>What day is the event?</h5>
 <form action="demo_form.asp">
-  <input type="date" name="bday">
-  <input type="submit">
+  <input type="date" name="date" id="selector-date">
 </form>
 
 <hr />
 
 <h5>What time is the event?</h5>
-Start: <input type="time" name="usr_time_start" id="time">
-End: <input type="time" name="usr_time_end" id="time">
-
+<div id="time-section">
+	<div id="time-left">
+	Start:
+	<br />
+	<input type="time" name="usr_time_start" id="time">
+	</div>
+	<div id="time-left">
+		End: 
+		<br /><input type="time" name="usr_time_end" id="time">
+	</div>
+</div>
+<div id="clear">
+	</div>
 
 
 <h4>

@@ -490,8 +490,34 @@ textarea {
 	font-size: 1em;
 	border-radius: 20px;
 	padding: 10px;
+	float: left;
 }
 
 h5 {
 	line-height: 0.8em;
+}
+
+#selector-date{
+	font-size: 1em;
+	background-color: purple;
+	color: white;
+	border-radius: 20px;
+	padding: 10px;
+
+}
+
+#time-left {
+	float: left;
+	margin-left: 100px;
+
+
+
+}
+
+#clear {
+	clear: both;
+}
+
+#time-section {
+	margin-left: 300px;
 }
