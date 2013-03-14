@@ -302,14 +302,20 @@ th {
 	text-align: left;
 }
 
-#middle-table-header {
+th.middle-table-column {
 	border-left: 2px solid black;
 	border-right: 2px solid black;
-	padding-left: 20px;
+	border-bottom: 2x solid black;
+	padding-left: 10px;
 }
 
-#filter-middle, #filter-right
-{
+.left-table-column {
+	padding-right: 30px;
+}
+
+.right-table-column {
+	text-align: right;
+
 }
 
 .empty-th{
@@ -334,8 +340,4 @@ table tr.alt-row td {
 	font-size: .7em;
 	line-height: 1em;
 
-}
-
-.party-details {
-	padding-left: 20px;
 }
