@@ -233,7 +233,7 @@ input[type=checkbox]
 .filter-section-title {
 	text-decoration: underline;
 	font-weight: bold;
-	margin-bottom: 20px;
+	line-height: 2em;
 }
 
 
