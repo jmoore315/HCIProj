@@ -384,7 +384,7 @@ table tr.alt-row td {
 	height: 200px;
 	width: 200px;
 	border: 5px solid black;
-	margin-left: 25%;
+	margin-left: 50px;
 }
 
 #profile-info {
@@ -397,8 +397,9 @@ table tr.alt-row td {
 }
 
 #profile-edit {
-	width: 400px;
-	height: 100px;
+	width: 500px;
+	height: 80px;
+	margin-top: 10px;
 	color: white;
 	background-color: purple;
 	font-size: 3em;
