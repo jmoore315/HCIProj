@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="NU Nightlife. Find parties, host events, and invite friends.">
+	<link rel="stylesheet" href="font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>NU Nightlife</title>
+	
+</head>
+<body>
+	<div id="header">
+			<h1><a href="index.html">NU Nightlife</a><h1>
+	</div>
+	<div id="wrapper">
+
+			<div id="content">
+						<h2>Create event </h2>
+							<div align="center">
+							<h3>What kind of event is this?</h3>
+								<select name="PartyType">
+									<option value="Null"></option>
+									<option value="Party">Party</option>
+									<option value="Bar">Bar Event</option>
+									<option value="Other">Other</option>
+								</select>
+
+							<h3>Public or Private?</h3>
+								<select name="PublicOrPrivate">
+									<option value="Null"></option>
+									<option value="Public">Public   </option>
+									<option value="Private">Private    </option>
+								</select>
+								<select name="PregameOrMainEvent">
+									<option value="Null"></option>
+									<option value="Public">Pregame   </option>
+									<option value="Private">Main Event    </option>
+								</select>
+							<h3>Cover fee?</h3>
+							<form name="Cover fee">
+								
+								<table cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<td rowspan="0">
+										<font size="3">$</font>
+											<input 
+												type="text" 
+												name="number" 
+												value="0" 
+												style="width:50px;height:50px;font-weight:bold;" />
+										</td>
+										<td>
+										<input 
+											type="button" 
+											value=" /\ " 
+											onclick="this.form.number.value++;" 
+											style="font-size:20px;margin:0;padding:0;width:50px;height:25px;" >
+										</td>
+									</tr>
+									<tr>
+										<td>
+										<input 
+											type=button 
+											value=" \/ " 
+											onclick="if(this.form.number.value > 0) {this.form.number.value--;}"											
+											style="font-size:20px;margin:0;padding:0;width:50px;height:25px;" >
+											</td>
+									</tr>
+								</table>
+							</form>
+							</div>
+							<div align="left">
+							<FORM METHOD="LINK" ACTION="index.html">
+								<INPUT TYPE="submit" VALUE="Back to Homepage">
+							</FORM>
+							</div>
+							<div align="right">
+							<FORM METHOD="LINK" ACTION="create2.html">
+								<INPUT TYPE="submit" VALUE="Next">
+							</FORM>
+							</div>
+							<div align="center">
+							<footer>Step 1 of 3</footer>
+							</div>
+			</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="footer">
+		<a href="map.html">
+			<span class="bottom-link" id="map" >
+					<i class="icon-globe icon-8x"></i>
+					<br/> 
+					<span class="icon-text">Map</span>
+			</span>
+		</a>
+		<a href="list.html">
+			<span class="bottom-link" id="list">
+				<i class="icon-reorder icon-8x" ></i>
+				<br/>
+				<span class="icon-text" >List</span>
+				
+			</span>
+		</a>
+
+		<a href="create.html">
+			<span class="bottom-link-selected" id="create">
+				<i class="icon-pencil icon-8x" id="selected-icon"></i>
+				<br/>
+				<span class="icon-text" id="selected-text">Create</span>
+			</span>
+		</a>
+		<a href="profile.html">
+			<span class="bottom-link" id="profile">
+				<i class="icon-user icon-8x"></i>
+				<br/>
+				<span class="icon-text">Profile</span>
+			</span>
+		</a>
+		
+	</div>
+
+</body>
+
+</html>
