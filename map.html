@@ -1,70 +1,163 @@
 <!DOCTYPE html>
 <htmL>
 <head>
-<meta charset="utf-8">
-<meta name="description" content="NU Nightlife. Find parties, host events, and invite friends.">
-<link rel="stylesheet" href="font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="style.css">
-<title>NU Nightlife</title>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <meta charset="utf-8">
+  <meta name="description" content="NU Nightlife. Find parties, host events, and invite friends.">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>NU Nightlife</title>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
 
-<script type="text/javascript">
-      function initialize() {
+    <script type="text/javascript">
+        function initialize(position) {
+          var curLat = position.coords.latitude;
+          var curLong = position.coords.longitude;
+          var curPosition = new google.maps.LatLng(curLat, curLong);
+
+          var position1 = new google.maps.LatLng(42.055969,-87.68093);
+          var position2 = new google.maps.LatLng(42.049372,-87.678323);
+          var position3 = new google.maps.LatLng(42.049293,-87.684116);
+          var position4 = new google.maps.LatLng(42.05377,-87.686992);
+          var position5 = new google.maps.LatLng(42.046711,-87.681423);
+
+
+          
           var mapOptions = {
             zoom: 16,
-            center: new google.maps.LatLng(42.06, -87.68),
+            center: curPosition, 
+            disableDefaultUI: true,
             mapTypeId: google.maps.MapTypeId.ROADMAP
           };
           var map = new google.maps.Map(document.getElementById('myMap'),mapOptions);
+
+          var image = 'big-marker.png';
+
+          var marker1 = new google.maps.Marker({
+            position: position1,
+            map: map,
+            icon: image,
+            draggable: false,
+            animation: google.maps.Animation.DROP,
+            title: "Here"
+          })
+
+          var marker2 = new google.maps.Marker({
+            position: position2,
+            map: map,
+            icon: image,
+            draggable: false,
+            animation: google.maps.Animation.DROP,
+            title: "Here"
+          })
+            var marker3 = new google.maps.Marker({
+            position: position3,
+            map: map,
+            icon: image,
+            draggable: false,
+            animation: google.maps.Animation.DROP,
+            title: "Here"
+          })
+
+            var marker4 = new google.maps.Marker({
+            position: position4,
+            map: map,
+            icon: image,
+            draggable: false,
+            animation: google.maps.Animation.DROP,
+            title: "Here"
+          })
+
+            var marker5 = new google.maps.Marker({
+            position: position5,
+            map: map,
+            icon: image,
+            draggable: false,
+            animation: google.maps.Animation.DROP,
+            title: "Here"
+          })
+
+
+
+
+
+
+          markerClickListener(marker1,curPosition,map); //Calling function to add click event listener
+          markerClickListener(marker2,position1,map); 
       }
+        
+
+        
+        //Function to add a click event listener to a marker
+        function markerClickListener (marker, curPosition,map){
+            google.maps.event.addListener(marker, 'click', function() {
+                var myInfoWindow = new google.maps.InfoWindow();
+                myInfoWindow.setContent("<a href=\"mailto:"  + "amartya@u.northwestern.edu" + "\">E-mail</a>");
+                myInfoWindow.open(map, marker);
+            });
+        }
+
+        //This error function is called from the navigator.geolocation.getCurrentPosition function
+        function errorFunction(){
+          alert('Browser does not support location data');
+        }
+        //getCurrentLocation() fetches the current coordinate
+        function getCurrentLocation() {
+          if(navigator.geolocation)
+          {
+            navigator.geolocation.getCurrentPosition(initialize,errorFunction);
+          }
+          else{
+            alert('Error: Could not fetch location');
+          }
+        }
     </script>
-
+  
 </head>
-<body onload = "initialize()">
-<div id="header">
-<h1><a href="index.html">NU Nightlife</a><h1>
-</div>
-<div id="wrapper">
-<div id="content">
-<div id="myMap">
-</div>
-</div>
+<body onload = "getCurrentLocation()">
+  <div id="header">
+      <h1><a href="index.html">NU Nightlife</a><h1>
+  </div>
+  <div id="wrapper">
+    <div id="content">
+      <div id="myMap">
+      </div>
+    </div>
 
-</div>
+  </div>
 
-<div id="footer">
-<a href="map.html">
-<span class="bottom-link-selected" id="map" >
-<i class="icon-globe icon-8x" id="selected-icon"></i>
-<br/>
-<span class="icon-text" id="selected-text">Map</span>
-</span>
-</a>
-<a href="list.html">
-<span class="bottom-link" id="list">
-<i class="icon-reorder icon-8x"></i>
-<br/>
-<span class="icon-text">List</span>
+  <div id="footer">
+    <a href="map.html">
+      <span class="bottom-link-selected" id="map" >
+          <i class="icon-globe icon-8x" id="selected-icon"></i>
+          <br/> 
+          <span class="icon-text" id="selected-text">Map</span>
+      </span>
+    </a>
+    <a href="list.html">
+      <span class="bottom-link" id="list">
+        <i class="icon-reorder icon-8x"></i>
+        <br/>
+        <span class="icon-text">List</span>
+        
+      </span>
+    </a>
 
-</span>
-</a>
-
-<a href="create.html">
-<span class="bottom-link" id="create">
-<i class="icon-pencil icon-8x"></i>
-<br/>
-<span class="icon-text">Create</span>
-</span>
-</a>
-<a href="profile.html">
-<span class="bottom-link" id="profile">
-<i class="icon-user icon-8x"></i>
-<br/>
-<span class="icon-text">Profile</span>
-</span>
-</a>
-
-</div>
+    <a href="create.html">
+      <span class="bottom-link" id="create">
+        <i class="icon-pencil icon-8x"></i>
+        <br/>
+        <span class="icon-text">Create</span>
+      </span>
+    </a>
+    <a href="profile.html">
+      <span class="bottom-link" id="profile">
+        <i class="icon-user icon-8x"></i>
+        <br/>
+        <span class="icon-text">Profile</span>
+      </span>
+    </a>
+    
+  </div>
 
 </body>
 
