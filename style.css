@@ -77,7 +77,7 @@ body {
     float: left;
     clear: both;
 	height: 100%;
-	
+	min-height: 100%;
 	height: auto !important;
 
 	vertical-align:bottom;
