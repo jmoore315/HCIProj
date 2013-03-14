@@ -303,7 +303,7 @@ th {
 }
 
 th.middle-table-column {
-	border-bottom: 2x solid black;
+	border-bottom: 2px solid black;
 	padding-left: 30px;
 	padding-bottom: 0;
 }
@@ -376,4 +376,29 @@ table tr.alt-row td {
 
 .category {
 	font-weight: bold;
+}
+
+
+#profile-pic {
+	float: left;
+	height: 200px;
+	width: 200px;
+	border: 5px solid black;
+	margin-left: 30%;
+}
+
+#profile-info {
+	display: inline-block;
+	text-align: left;
+}
+
+#profile-name {
+	font-weight: bold;
+}
+
+#profile-edit {
+	width: 400px;
+	height: 100px;
+	color: white;
+	background-color: purple;
 }
