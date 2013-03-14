@@ -469,6 +469,10 @@ table tr.alt-row td {
 }
 
 textarea {
-	font-size: 2em;
 	width: 80%;
+	font-family: "Foo Regular", "Bar Sans", sans-serif;
+}
+
+creation {
+	font-size: 1.5em;
 }
