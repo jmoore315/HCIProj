@@ -499,8 +499,10 @@ h5 {
 
 #selector-date{
 	font-size: 1em;
+	/*
 	background-color: purple;
 	color: white;
+	*/
 	border-radius: 20px;
 	padding: 10px;
 
@@ -521,3 +523,6 @@ h5 {
 #time-section {
 	margin-left: 300px;
 }
+
+hr {
+	border-color: black;}
