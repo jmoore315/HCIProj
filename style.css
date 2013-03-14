@@ -491,3 +491,7 @@ textarea {
 	border-radius: 20px;
 	padding: 10px;
 }
+
+h5 {
+	line-height: 0.8em;
+}
