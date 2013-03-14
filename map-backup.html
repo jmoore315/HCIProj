@@ -22,6 +22,27 @@
       var position3 = new google.maps.LatLng(42.049293,-87.684116);
 
 
+var image = 'images/marker.png';
+  var marker1 = new google.maps.Marker({
+                           position: position1, 
+                           map: map, //The same name as defined above
+                           icon: image,
+                           draggable:false,
+                           title: "Here"
+                        });   
+          markerClickListener(marker1,position1,map); //Calling function to add click even listener
+        }
+        
+        //Function to add a click event listener to a marker
+        function markerClickListener (marker, curPosition,map){
+            google.maps.event.addListener(marker1, 'click', function() {
+                var myInfoWindow = new google.maps.InfoWindow();
+                myInfoWindow.setContent("<a href=\"mailto:"  + "amartya@u.northwestern.edu" + "\">E-mail</a>");
+                myInfoWindow.open(map, marker1);
+            });
+        }
+
+
 
 
 
