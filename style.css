@@ -384,7 +384,6 @@ table tr.alt-row td {
 	height: 200px;
 	width: 200px;
 	border: 5px solid black;
-	margin-left: 50px;
 	margin-right: 10px;
 }
 
@@ -413,4 +412,51 @@ table tr.alt-row td {
 	-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
 	box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
 	border-radius: 5px;
+	padding-bottom: 5px;
+}
+
+#prof {
+	border: 5px solid black;
+	border-radius: 15px;
+	float: left;
+			margin-left: 50px;
+			width: 90%;
+
+	padding: 25px;
+
+}
+
+#sync {
+	clear: both;
+		margin-left: 50px;
+		margin-top: 50px;
+		border: 5px solid black;
+		border-radius: 15px;
+		float: left;
+		padding: 25px;
+		width: 90%;
+}
+
+.sync-text {
+	float: left;
+	display: inline-block;
+	text-align: left;
+	line-height: 1.5em;
+
+
+}
+
+#sync-img {
+	width: 60px;
+	height: 60px;
+	margin-top: 10px;
+	margin-bottom: -10px; 
+	display: inline-block;
+	text-align: right;
+}
+
+#sync-imgages {
+
+	width: 70px;
+	float: left;
 }
