@@ -76,7 +76,7 @@ var image = 'big-marker.png';
         function markerClickListenerThree (marker, curPosition,map){
             google.maps.event.addListener(marker, 'click', function() {
                 var myInfoWindow = new google.maps.InfoWindow();
-                myInfoWindow.setContent("Party: Clark and Maple");
+                myInfoWindow.setContent("Pregame: Clark and Maple");
                 myInfoWindow.open(map, marker);
             });
         }
