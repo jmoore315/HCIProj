@@ -222,11 +222,11 @@ fieldset {
 input[type=checkbox]
 {
   /* Double-sized Checkboxes */
-  -ms-transform: scale(4); /* IE */
-  -moz-transform: scale(4); /* FF */
-  -webkit-transform: scale(4); /* Safari and Chrome */
-  -o-transform: scale(4); /* Opera */
-  padding: 45px;
+  -ms-transform: scale(5); /* IE */
+  -moz-transform: scale(5); /* FF */
+  -webkit-transform: scale(5); /* Safari and Chrome */
+  -o-transform: scale(5); /* Opera */
+  padding: 150px;
       z-index:1;
 }
 .filter-section-title {
