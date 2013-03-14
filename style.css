@@ -306,15 +306,21 @@ th.middle-table-column {
 	border-left: 2px solid black;
 	border-right: 2px solid black;
 	border-bottom: 2x solid black;
-	padding-left: 10px;
+	padding-left: 30px;
+	padding-bottom: 0;
 }
 
+.middle-table-column{
+	padding-left: 50px;
+	padding-bottom: 10px;
+}
 .left-table-column {
-	padding-right: 30px;
+	padding-right: 50px;
 }
 
 .right-table-column {
 	text-align: right;
+	font-size: 0.7em;
 
 }
 
