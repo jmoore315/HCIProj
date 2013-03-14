@@ -7,7 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>NU Nightlife</title>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 
     <script type="text/javascript">
         function initialize(position) {
@@ -77,6 +76,15 @@
             title: "Here"
           })
 
+
+          var LatLngList = [position1, position2, position3, position4, position5];
+          var bounds = new google.maps.LatLngBounds();
+
+        for (var i = 0, LtLgLen = LatLngList.length; i < LtLgLen; i++) {
+            bounds.extend(LatLngList[i]);
+        }
+
+        map.fitBounds(bounds);
 
 
 
