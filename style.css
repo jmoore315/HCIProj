@@ -302,6 +302,19 @@ legend{
 
 }
 
+#submit-create, #reset-create{
+
+	font-size: 1.5em;
+	background-color: purple;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	color: white;
+	margin-right: 20px;
+
+}
+
+
+
 th {
 	border-bottom: 2px solid black;
 	color: purple;
@@ -469,7 +482,7 @@ table tr.alt-row td {
 }
 
 textarea {
-	font-size: 1.5em;
+	font-size: 1em;
 	width: 80%;
 	font-family: "Foo Regular", "Bar Sans", sans-serif;
 }
@@ -491,6 +504,8 @@ textarea {
 	border-radius: 20px;
 	padding: 10px;
 	float: left;
+		background-color: purple;
+	color: white;
 }
 
 h5 {
@@ -521,7 +536,7 @@ h5 {
 }
 
 #time-section {
-	margin-left: 300px;
+	margin-left: 100px;
 }
 
 hr {
