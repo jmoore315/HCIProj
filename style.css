@@ -303,11 +303,13 @@ th {
 }
 
 th.middle-table-column {
-	border-left: 2px solid black;
-	border-right: 2px solid black;
 	border-bottom: 2x solid black;
 	padding-left: 30px;
 	padding-bottom: 0;
+}
+
+th.right-table-column{
+	font-size: 1em;
 }
 
 .middle-table-column{
@@ -320,7 +322,7 @@ th.middle-table-column {
 
 .right-table-column {
 	text-align: right;
-	font-size: 0.7em;
+	font-size: 0.8em;
 
 }
 
@@ -342,7 +344,7 @@ table tr.alt-row td {
 }
 
 .party-description {
-	font-style: italic;
+	font-style: oblique;
 	font-size: .7em;
 	line-height: 1em;
 
