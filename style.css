@@ -322,9 +322,11 @@ th {
 }
 
 th.middle-table-column {
+	
 	border-bottom: 2px solid black;
 	padding-left: 30px;
 	padding-bottom: 0;
+
 }
 
 th.right-table-column{
@@ -333,7 +335,7 @@ th.right-table-column{
 
 .middle-table-column{
 	padding-left: 30px;
-	padding-bottom: 10px;
+	/*padding-bottom: 10px;*/
 }
 .left-table-column {
 	padding-right: 50px;
@@ -358,9 +360,8 @@ table tr.alt-row td {
 }
 
 .party-address {
-	font-weight: bold;
 	font-size: 1em;
-	line-height: 1.5em;
+	line-height: 1em;
 
 }
 
@@ -540,4 +541,5 @@ h5 {
 }
 
 hr {
-	border-color: black;}
+	border-color: black;
+}
