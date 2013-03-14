@@ -18,7 +18,7 @@
           var map = new google.maps.Map(document.getElementById('myMap'),mapOptions);
       
       var position1 = new google.maps.LatLng(42.05645,-87.683902);
-      var position2 = new google.maps.LatLng(42.049372,-87.678323);
+      var position2 = new google.maps.LatLng(42.045245, -87.682432);
       var position3 = new google.maps.LatLng(42.049293,-87.684116);
 
 
@@ -56,7 +56,7 @@ var image = 'big-marker.png';
         function markerClickListenerOne (marker, curPosition,map){
             google.maps.event.addListener(marker, 'click', function() {
                 var myInfoWindow = new google.maps.InfoWindow();
-                myInfoWindow.setContent("Party: ");
+                myInfoWindow.setContent("Party: Gaffield and Maple");
                 myInfoWindow.open(map, marker);
             });        
           }
@@ -66,7 +66,7 @@ var image = 'big-marker.png';
         function markerClickListenerTwo (marker, curPosition,map){
             google.maps.event.addListener(marker, 'click', function() {
                 var myInfoWindow = new google.maps.InfoWindow();
-                myInfoWindow.setContent("Test2");
+                myInfoWindow.setContent("Bar: The Keg");
                 myInfoWindow.open(map, marker);
             });
         }
@@ -76,7 +76,7 @@ var image = 'big-marker.png';
         function markerClickListenerThree (marker, curPosition,map){
             google.maps.event.addListener(marker, 'click', function() {
                 var myInfoWindow = new google.maps.InfoWindow();
-                myInfoWindow.setContent("<a href=\"mailto:"  + "amartya@u.northwestern.edu" + "\">E-mail</a>");
+                myInfoWindow.setContent("Party: Clark and Maple");
                 myInfoWindow.open(map, marker);
             });
         }
