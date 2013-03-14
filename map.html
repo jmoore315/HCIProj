@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>NU Nightlife</title>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 
     <script type="text/javascript">
         function initialize(position) {
@@ -14,84 +14,46 @@
           var curLong = position.coords.longitude;
           var curPosition = new google.maps.LatLng(curLat, curLong);
 
-          var position1 = new google.maps.LatLng(42.055969,-87.68093);
-          var position2 = new google.maps.LatLng(42.049372,-87.678323);
-          var position3 = new google.maps.LatLng(42.049293,-87.684116);
-          var position4 = new google.maps.LatLng(42.05377,-87.686992);
-          var position5 = new google.maps.LatLng(42.046711,-87.681423);
-
+          var position1 = new google.maps.LatLng(42.058468,-87.685911);
 
           
           var mapOptions = {
             zoom: 16,
             center: curPosition, 
-            disableDefaultUI: true,
             mapTypeId: google.maps.MapTypeId.ROADMAP
           };
           var map = new google.maps.Map(document.getElementById('myMap'),mapOptions);
 
           var image = 'big-marker.png';
+          var marker = new google.maps.Marker({
+                           position: curPosition, 
+                           map: map, //The same name as defined above
+                           icon: image,
+                           draggable:false,
+                           animation: google.maps.Animation.DROP,
+                           title: "Here"
+                        });   
 
-          var marker1 = new google.maps.Marker({
-            position: position1,
-            map: map,
-            icon: image,
-            draggable: false,
-            animation: google.maps.Animation.DROP,
-            title: "Here"
-          })
 
           var marker2 = new google.maps.Marker({
-          	position: position2,
+          	position: position1,
           	map: map,
           	icon: image,
           	draggable: false,
             animation: google.maps.Animation.DROP,
             title: "Here"
           })
-            var marker3 = new google.maps.Marker({
-            position: position3,
-            map: map,
-            icon: image,
-            draggable: false,
-            animation: google.maps.Animation.DROP,
-            title: "Here"
-          })
-
-            var marker4 = new google.maps.Marker({
-            position: position4,
-            map: map,
-            icon: image,
-            draggable: false,
-            animation: google.maps.Animation.DROP,
-            title: "Here"
-          })
-
-            var marker5 = new google.maps.Marker({
-            position: position5,
-            map: map,
-            icon: image,
-            draggable: false,
-            animation: google.maps.Animation.DROP,
-            title: "Here"
-          })
-
-
-          var LatLngList = [position1, position2, position3, position4, position5];
-          var bounds = new google.maps.LatLngBounds();
-
-        for (var i = 0, LtLgLen = LatLngList.length; i < LtLgLen; i++) {
-            bounds.extend(LatLngList[i]);
-        }
-
-        map.fitBounds(bounds);
-
-
-
           markerClickListener(marker,curPosition,map); //Calling function to add click event listener
           markerClickListener(marker2,position1,map); 
       }
         
+
+
+
+
+
+
+
 
         
         //Function to add a click event listener to a marker
