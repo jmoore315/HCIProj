@@ -235,7 +235,7 @@ input[type=checkbox]
 
 
 .party-filter {
-	text-align: center;
+	text-align: left;
 	clear: both;
 }
 legend{
@@ -246,7 +246,7 @@ legend{
 	float: none;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
+	text-align: center;
 	margin-top: 10px;
 }
 
