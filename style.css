@@ -236,6 +236,7 @@ input[type=checkbox]
 	text-decoration: underline;
 	font-weight: bold;
 	line-height: 2em;
+	color: purple;
 }
 
 
@@ -295,4 +296,8 @@ th {
 
 table tr.alt-row td {
 	background-color: #EADCF8;
+}
+
+#test {
+	margin-right: 40px;
 }
