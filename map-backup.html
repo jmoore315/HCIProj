@@ -6,79 +6,21 @@
   <link rel="stylesheet" href="font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>NU Nightlife</title>
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <style>
+      html, body, #myMap {
+        height: 100%;
+      }
+    </style>
     <script type="text/javascript">
-        function initialize(position) {
-          var curLat = position.coords.latitude;
-          var curLong = position.coords.longitude;
-          var curPosition = new google.maps.LatLng(curLat, curLong);
-
-          var position1 = new google.maps.LatLng(42.058468,-87.685911);
-
-          
+      function initialize() {
           var mapOptions = {
-            zoom: 16,
-            center: curPosition, 
+            zoom: 14,
+            center: new google.maps.LatLng(42.06, -87.68), 
             mapTypeId: google.maps.MapTypeId.ROADMAP
           };
           var map = new google.maps.Map(document.getElementById('myMap'),mapOptions);
-
-          var image = 'big-marker.png';
-          var marker = new google.maps.Marker({
-                           position: curPosition, 
-                           map: map, //The same name as defined above
-                           icon: image,
-                           draggable:false,
-                           animation: google.maps.Animation.DROP,
-                           title: "Here"
-                        });   
-
-
-          var marker2 = new google.maps.Marker({
-            position: position1,
-            map: map,
-            icon: image,
-            draggable: false,
-            animation: google.maps.Animation.DROP,
-            title: "Here"
-          })
-          markerClickListener(marker,curPosition,map); //Calling function to add click event listener
-          markerClickListener(marker2,position1,map); 
       }
-        
-
-
-
-
-
-
-
-
-        
-        //Function to add a click event listener to a marker
-        function markerClickListener (marker, curPosition,map){
-            google.maps.event.addListener(marker, 'click', function() {
-                var myInfoWindow = new google.maps.InfoWindow();
-                myInfoWindow.setContent("<a href=\"mailto:"  + "amartya@u.northwestern.edu" + "\">E-mail</a>");
-                myInfoWindow.open(map, marker);
-            });
-        }
-
-        //This error function is called from the navigator.geolocation.getCurrentPosition function
-        function errorFunction(){
-          alert('Browser does not support location data');
-        }
-        //getCurrentLocation() fetches the current coordinate
-        function getCurrentLocation() {
-          if(navigator.geolocation)
-          {
-            navigator.geolocation.getCurrentPosition(initialize,errorFunction);
-          }
-          else{
-            alert('Error: Could not fetch location');
-          }
-        }
     </script>
 
 </head>
