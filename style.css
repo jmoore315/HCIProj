@@ -349,3 +349,24 @@ table tr.alt-row td {
 	line-height: 1em;
 
 }
+
+.description-category {
+	font-style: normal;
+	font-weight: bold;
+}
+
+.party-description table{
+	padding: 0;
+	margin: 0;
+		font-style: oblique;
+	font-size: .7em;
+	line-height: 1em;
+	
+}
+.party-description td{
+	padding: 0;
+	margin: 0;
+	line-height: 1em;
+
+}
+
