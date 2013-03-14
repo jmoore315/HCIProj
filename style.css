@@ -419,22 +419,23 @@ table tr.alt-row td {
 	border: 5px solid black;
 	border-radius: 15px;
 	float: left;
-			margin-left: 50px;
-			width: 90%;
+			margin-left: 5%;
+			width: 85%;
 
 	padding: 25px;
-
+	margin-right: 5%;
 }
 
 #sync {
 	clear: both;
-		margin-left: 50px;
+		margin-left: 5%;
+		margin-right: 50%;
 		margin-top: 50px;
 		border: 5px solid black;
 		border-radius: 15px;
 		float: left;
 		padding: 25px;
-		width: 90%;
+		width: 85%;
 }
 
 .sync-text {
