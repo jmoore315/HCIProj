@@ -1,75 +1,204 @@
 <!DOCTYPE html>
 <htmL>
 <head>
-	<meta charset="utf-8">
-	<meta name="description" content="NU Nightlife. Find parties, host events, and invite friends.">
-	<link rel="stylesheet" href="font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>NU Nightlife</title>
-	
+<meta charset="utf-8">
+<meta name="description" content="NU Nightlife. Find parties, host events, and invite friends.">
+<link rel="stylesheet" href="font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>NU Nightlife</title>
+
 </head>
 <body>
-	<div id="header">
-			<h1><a href="index.html">NU Nightlife</a><h1>
-	</div>
-	<div id="wrapper">
+<div id="header">
+<h1><a href="index.html">NU Nightlife</a><h1>
+</div>
+<div id="wrapper">
 
-			<div id="content">
-						<h2>Create event </h2>
-
-
-			</div>
-
-	</div>
+<div id="content">
+<h2>Create event </h2>
 
 
 
+<h5>
+What kind of event is this?
+</h5>
+<select>
+  <option value="party">Party</option>
+  <option value="bar">Bar</option>
+</select>
+
+<h5>
+Public or private?
+</h5>
+<select>
+  <option value="public">Public</option>
+  <option value="private">Private</option>
+</select>
+
+<h5>
+Pregame or main event?
+</h5>
+<select>
+  <option value="Pregame">Pregame</option>
+  <option value="Main event">Main event</option>
+</select>
+
+
+<h5>
+Cover charge?
+</h5>
+
+<textarea name="charge" >
+0
+</textarea>
+
+
+<h4>
+Address
+</h4>
+
+<h5>
+Address line 1
+</h5>
+
+<textarea name="address1" >
+</textarea>
+
+<h5>
+Address line 2
+</h5>
+
+<textarea name="address2" >
+</textarea>
+
+<h5>
+City
+</h5>
+
+<textarea name="city" >
+</textarea>
+
+<h5>
+Event Description
+</h5>
+
+<textarea name="descripion" >
+</textarea>
+
+<h5>
+Date
+</h5>
+
+<textarea name="date" >
+</textarea>
+
+<h5>
+Time
+</h5>
+
+
+<select>
+  <option value="12pm">12pm</option>
+  <option value="1pm">1pm</option>
+  <option value="2pm">2pm</option>
+  <option value="3pm">3pm</option>
+  <option value="4pm">4pm</option>
+  <option value="5pm">5pm</option>
+  <option value="6pm">6pm</option>
+  <option value="7pm">7pm</option>
+  <option value="8pm">8pm</option>
+  <option value="9pm">9pm</option>
+  <option value="10pm">10pm</option>
+  <option value="11pm">11pm</option>
+  <option value="12am">12am</option>
+  <option value="1am">1am</option>
+  <option value="2am">2am</option>
+</select>
+
+<select>
+  <option value="12pm">12pm</option>
+  <option value="1pm">1pm</option>
+  <option value="2pm">2pm</option>
+  <option value="3pm">3pm</option>
+  <option value="4pm">4pm</option>
+  <option value="5pm">5pm</option>
+  <option value="6pm">6pm</option>
+  <option value="7pm">7pm</option>
+  <option value="8pm">8pm</option>
+  <option value="9pm">9pm</option>
+  <option value="10pm">10pm</option>
+  <option value="11pm">11pm</option>
+  <option value="12am">12am</option>
+  <option value="1am">1am</option>
+  <option value="2am">2am</option>
+  <option value="3am">3am</option>
+  <option value="4am">4am</option>
+  <option value="5am">5am</option>
+  <option value="6am">6am</option>
+</select>
+
+<br></br>
+<br>
+
+<button value="AddFacebookfriends" >
+Add Facebook friends
+</button>
+
+<br></br>
+
+<button value="Cancel" >
+Cancel
+</button>
+
+<button value="Create" >
+Cancel
+</button>
+
+
+</div>
+
+</div>
 
 
 
 
 
 
+<div id="footer">
+<a href="map.html">
+<span class="bottom-link" id="map" >
+<i class="icon-globe icon-8x"></i>
+<br/>
+<span class="icon-text">Map</span>
+</span>
+</a>
+<a href="list.html">
+<span class="bottom-link" id="list">
+<i class="icon-reorder icon-8x" ></i>
+<br/>
+<span class="icon-text" >List</span>
 
+</span>
+</a>
 
+<a href="create.html">
+<span class="bottom-link-selected" id="create">
+<i class="icon-pencil icon-8x" id="selected-icon"></i>
+<br/>
+<span class="icon-text" id="selected-text">Create</span>
+</span>
+</a>
+<a href="profile.html">
+<span class="bottom-link" id="profile">
+<i class="icon-user icon-8x"></i>
+<br/>
+<span class="icon-text">Profile</span>
+</span>
+</a>
 
-
-
-
-	<div id="footer">
-		<a href="map.html">
-			<span class="bottom-link" id="map" >
-					<i class="icon-globe icon-8x"></i>
-					<br/> 
-					<span class="icon-text">Map</span>
-			</span>
-		</a>
-		<a href="list.html">
-			<span class="bottom-link" id="list">
-				<i class="icon-reorder icon-8x" ></i>
-				<br/>
-				<span class="icon-text" >List</span>
-				
-			</span>
-		</a>
-
-		<a href="create.html">
-			<span class="bottom-link-selected" id="create">
-				<i class="icon-pencil icon-8x" id="selected-icon"></i>
-				<br/>
-				<span class="icon-text" id="selected-text">Create</span>
-			</span>
-		</a>
-		<a href="profile.html">
-			<span class="bottom-link" id="profile">
-				<i class="icon-user icon-8x"></i>
-				<br/>
-				<span class="icon-text">Profile</span>
-			</span>
-		</a>
-		
-	</div>
+</div>
 
 </body>
 
 </html>
+
