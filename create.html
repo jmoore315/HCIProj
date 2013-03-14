@@ -7,6 +7,16 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>NU Nightlife</title>
 
+<script type="text/javascript">
+function saveValue(target){
+var stepVal = document.getElementById(target).value;
+alert("Value: " + stepVal); // alert() for testing purposes only
+// Use Ajax to send the adjusted value to server storage if needed
+// Ajax Post Video Tutorial - www.developphp.com/view.php?tid=1185
+}
+</script>
+
+
 </head>
 <body>
 <div id="header">
@@ -23,15 +33,16 @@
 <h5>
 What kind of event is this?
 </h5>
-<select>
+<select id="selector">
   <option value="party">Party</option>
   <option value="bar">Bar</option>
+  <option value="bar">Other</option>
 </select>
 
 <h5>
 Public or private?
 </h5>
-<select>
+<select id="selector">
   <option value="public">Public</option>
   <option value="private">Private</option>
 </select>
@@ -39,7 +50,7 @@ Public or private?
 <h5>
 Pregame or main event?
 </h5>
-<select>
+<select id="selector">
   <option value="Pregame">Pregame</option>
   <option value="Main event">Main event</option>
 </select>
@@ -49,8 +60,11 @@ Pregame or main event?
 Cover charge?
 </h5>
 
+<input type="number" id="stepper1" name="stepper1" min="0" max="10" value="0" />
+<br /><br />
+<br />
 <textarea name="charge" >
-0
+
 </textarea>
 
 
